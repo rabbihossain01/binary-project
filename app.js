@@ -1,17 +1,17 @@
-const result = document.getElementById('result');
-const submit = document.getElementById('submit');
+const result = document.getElementById("result");
+const submit = document.getElementById("submit");
 
 function binary(e) {
   e.preventDefault();
 
-  const number = document.getElementById('number').value;
+  const number = document.getElementById("number").value;
 
-  if (number === '') {
-    alert('Please enter a number');
+  if (number === "") {
+    alert("Please enter a number");
   } else if (number < 0) {
-    alert('Please enter your positive number')
+    alert("Please enter your positive number");
   } else {
-    result.style.visibility = 'visible';
+    result.style.visibility = "visible";
   }
 
   // converting
@@ -19,4 +19,6 @@ function binary(e) {
 
   result.innerHTML = binaryNumber;
 }
-submit.addEventListener('click', binary);
+submit.addEventListener("click", binary);
+
+console.log("working");
