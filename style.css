@@ -1,0 +1,131 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg: #efefef;
+  }
+  
+  body {
+    background: var(--bg);
+    
+  }
+  
+  /* utility classes */
+  #container {
+    height: 600px;
+    max-width: 750px;
+    margin: 5rem auto;
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 10px 10px 10px rgba(241, 7, 7, 0.2), -10px -10px 10px rgba(255, 255, 255, 1), inset 10px 10px 10px rgba(12, 161, 69, 0.2), inset -10px -10px 10px rgba(255, 255, 255, 1);
+    border: 15px solid var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  textarea:focus,
+  input:focus {
+    border-color: transparent !important;
+  }
+  
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .contact2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(81, 30, 175);
+    text-shadow: 0.2rem 0.2rem 0.3rem rgb(195, 56, 137) ;
+  }
+  
+  h1#result {
+    visibility: hidden;
+    /* overflow: auto; */
+  }
+  
+  .btn {
+    height: 70px;
+    width: 500px;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -6px -6px 5px rgba(255, 255, 255, 0.8);
+    background: var(--bg);
+    outline: none;
+    margin: 1.5rem 0;
+  }
+  
+  .input2 {
+    height: 75px;
+    width: 500px;
+    border: none;
+    padding: 0px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px rgba(40, 0, 63, 0.2), inset -6px -6px 5px rgba(255, 255, 255, 0.8);
+    background: var(--bg);
+    outline: none;
+    margin: 1.5rem 0;
+  
+  }
+  
+  #submit {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -6px -6px 5px rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    color: rgb(95, 13, 228);
+    font-size: 30px;
+  }
+  
+  #submit:active {
+  
+    box-shadow: inset 5px 5px 5px rgba(214, 17, 17, 0.795), inset -6px -6px 5px rgba(197, 14, 14, 0.8), 5px 5px 5px rgba(0, 0, 0, 0.2), -6px -6px 5px rgba(221, 20, 20, 0.8);
+  }
+  
+  
+  /* Responsive */
+  
+  @media (max-width: 450px) {
+    .input2{
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #container {
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 20px;
+    }
+    .input2{
+      width: 400px;
+    }
+    #submit{
+     font-size: 17px;
+    }
+  }
+  
+   @media (max-width: 992px) {
+    #container {
+      max-width: 650px;
+      margin: 4rem auto;
+    }
+  } 
